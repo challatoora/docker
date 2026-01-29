@@ -1,8 +1,8 @@
 #!/bin/bash
 
 number=$1
-if [ $number > 25 ]; then
-echo "yes $number greater then 25"
+if [ $number -gt 50 ]; then
+echo " $number greater then 50"
 else
-echo "no $number lessthen 10"
+echo "n $number lessthen 50"
 fi
