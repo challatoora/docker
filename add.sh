@@ -10,7 +10,7 @@ echo "n $number lessthen 50"
 fi
 
 
-echo $@
-echo $#
-echo $0
-ech0 $user
+echo "$@"
+echo "$#"
+echo "$0"
+ech0 "$user"
