@@ -2,7 +2,7 @@
 
 number=$1
 if [ $number > 25 ]; then
-echo " false"
+echo "yes $number greater then 25"
 else
-echo "true"
+echo "no $number lessthen 10"
 fi
