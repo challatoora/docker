@@ -8,3 +8,9 @@ echo " $number equal to 50"
 else
 echo "n $number lessthen 50"
 fi
+
+
+echo $@
+echo $#
+echo $0
+ech0 $user
