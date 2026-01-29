@@ -1,6 +1,6 @@
 #!/bin/bash
 
-number=23
+number=$1
 if [ $number > 25]; then
 echo " false"
 else
