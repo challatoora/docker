@@ -12,5 +12,5 @@ fi
 
 echo "$@"
 echo "$#"
-echo "$o"
+echo "$0"
 echo "$user"
