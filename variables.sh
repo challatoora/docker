@@ -11,6 +11,10 @@ d=$((c+7))
 e=$((d*2))
 
 echo "result $e"
+
+
+
+echo $(date)
  
 
  
