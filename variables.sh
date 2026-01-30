@@ -19,8 +19,8 @@ echo "$temp"
 
 
 
-gretting=hii every one good morninh
-name1=my name is murali
+gretting="hii every one good morninh"
+name1="my name is murali"
 message= $gretting and $name1
 
 
