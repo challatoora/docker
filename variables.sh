@@ -21,7 +21,7 @@ echo "$temp"
 
 gretting=hii every one good morninh
 name1=my name is murali
-message=$gretting and $name1
+message=($gretting + $name1)
 
 
 echo "message $message"
