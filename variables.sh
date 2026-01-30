@@ -25,6 +25,7 @@ message="$gretting,$name1"
 
 
 echo "message $message"
+echo ${message}
 
  
 
