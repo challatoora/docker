@@ -1,8 +1,16 @@
 #!/bin/bash
 
-
-a=$((5+5))
-b=10
+a=10
+b=20
 c=$((a+b))
 
-echo " $c"
+echo "result $C"
+
+d=$((c+7))
+ echo "result $d"
+e=$((d*2))
+
+echo "result $e"
+ 
+
+ 
