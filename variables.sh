@@ -14,7 +14,9 @@ echo "result $e"
 
 
 
-echo $(date)
+temp=$(date)
+echo "temp"
+
  
 
  
