@@ -4,7 +4,7 @@ a=thumsup
 b=sprite
 a=($b)
 b=($b)
-price=((20+5))
+price=(20+5)
 
 echo "price of the $a is $price "
 echo "price of the $b is $price "
