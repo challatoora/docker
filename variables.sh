@@ -1,7 +1,8 @@
 #!/bin/bash
 
 
-person1=$1
-person2=$2
+a=5
+b=10
+c=$((a+b))
 
-echo " $person1 is the brother of $person2"
+echo " $c"
