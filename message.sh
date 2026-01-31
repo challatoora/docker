@@ -1,21 +1,38 @@
 #!/bin/bash
-a=$1
-b=$2
 
-echo " total $@"
+a=10
+ echo " print $a value"
 
-echo " total $#"
+b=$1
+c=$2
 
-echo " total $0"
+echo " $1 and $2"
 
-echo " total $$"
+d=$((b-c))
 
-echo " total $PWD"
+echo " print $d "
 
-echo " total $USER"
+echo date
 
-echo " total $?"
+echo " enter the value"
+read murali
 
+echo " value $murali"
+
+e=10
+f=20
+
+g=$(($e+$f))
+
+echo " print $g "
+
+echo " $@"
+
+echo "$#"
+
+echo "$0"
+
+echo "$?"
 
 
 
