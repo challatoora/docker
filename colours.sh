@@ -5,10 +5,10 @@ b=yellowredorange
 price=$1
 
 
-if [ a -ge 1000 ] && [ a -le 5000 ]; then
+if [ $price -ge 1000 ] && [ $price -le 5000 ]; then
     echo " print $a  "
 
-if [ b -ge 500 ] && [ b -le 800]; then
+elif [ $price -ge 500 ] && [ $price -le 800]; then
     echo " print $b "
 fi
  
