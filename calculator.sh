@@ -22,4 +22,5 @@ elif [ $C -eq / ]; then
 
 else
     echo "invalid opeartor"
+fi
     
