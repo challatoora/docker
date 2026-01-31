@@ -1,6 +1,6 @@
 #!/bin/bash
-Name1=ramesh
-Name2=suresh 
+Name1=$1
+Name2=$2
 
 echo " hii $Name1 "
 echo "hello $Name2"
