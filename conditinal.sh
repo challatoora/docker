@@ -16,4 +16,7 @@
 murali=$1
 if [ $murali -ge 18 ]; then
     echo " yes u r elibile for vote"
+else
+    echo "  u r not elibile for vote"
+     
 fi
