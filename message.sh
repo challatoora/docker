@@ -1,7 +1,7 @@
 #!/bin/bash
 a=$(date +%s)
 sleep 10
-b=$(date+%s)
+b=$(date +%s)
 
 c=$((b-c))
 
