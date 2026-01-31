@@ -13,7 +13,7 @@
 
 
 
-echo " MURALI"
 murali=$1
-if [ murali -ge 18] then
+if [ $murali -ge 18 ]; then
+    echo " yes u r elibile for vote"
 fi
