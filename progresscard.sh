@@ -32,4 +32,6 @@ marks=$1
 
 if [ "$marks" -lt 0 ] || [ "$marks" -gt 100 ]; then
     echo "Invalid marks"
+else
+    echo "Hi"
 fi
