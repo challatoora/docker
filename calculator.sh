@@ -12,7 +12,7 @@ elif [ $C = "-" ]; then
     echo $(($A-$B))
 
 elif [ $C = "*" ]; then
-    echo $(($A*$B))
+    echo $((A*B))
 
 elif [ $C = "/" ]; then
     if [ $B = 0 ]; then
