@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo " my name is murali"
+echo " my name is "
 read name 
 
 echo "my name is $name"
