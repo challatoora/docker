@@ -12,7 +12,7 @@
 
 
 
-
+: << 'COMMENT'
 murali=$1
 if [ $murali -gt 18 ]; then
     echo " yes u r elibile for vote"
@@ -23,3 +23,12 @@ else
     echo "  u r not elibile for vote"
      
 fi
+COMMENT
+
+shirt=$1
+if [ $shirt -ge 100 ] && [ $shirt -le 1000 ]; then
+    echo " its ordinery shirt "
+elif[ $shirt -gt 1000 ]; then
+    echo " its good shirt
+ else
+    echo " its  cheap"  
