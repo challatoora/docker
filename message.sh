@@ -1,11 +1,21 @@
 #!/bin/bash
-a=$(date +%s)
-sleep 10
-b=$(date +%s)
+a=$1
+b=$2
 
-c=$(($b-$a))
+echo " total $@"
 
-echo "total time savings $c"
+echo " total $#"
+
+echo " total $0"
+
+echo " total $$"
+
+echo " total $pwd"
+
+echo " total $user"
+
+echo " total $?"
+
 
 
 
