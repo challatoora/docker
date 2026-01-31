@@ -5,17 +5,17 @@ B=$2
 C=$3
 
 
-if [ $C -eq "+" ]; then
+if [ $C = "+" ]; then
     echo $(($A+$B))
 
-elif [ $C -eq "-" ]; then
+elif [ $C = "-" ]; then
     echo $(($A-$B))
 
-elif [ $C -eq "*" ]; then
+elif [ $C = "*" ]; then
     echo $(($A*$B))
 
-elif [ $C -eq "/" ]; then
-    if [ $B -eq 0 ]; then
+elif [ $C = "/" ]; then
+    if [ $B = 0 ]; then
         echo " Division by zero not allowed "
     else
          echo $(($A/$B))
