@@ -19,6 +19,7 @@ elif [ $C -eq / ]; then
         echo " Division by zero not allowed "
     else
          echo $(($A/$B))
+    fi
 
 else
     echo "invalid opeartor"
