@@ -11,7 +11,7 @@ if [ $C = "+" ]; then
 elif [ $C = "-" ]; then
     echo $(($A-$B))
 
-elif [ $C = "*" ]; then
+elif [ "$C" = "*" ]; then
     echo $((A*B))
 
 elif [ $C = "/" ]; then
