@@ -27,10 +27,9 @@ COMMENT
 
 
 
-
 marks=$1
 
-if [ "$marks" -lt 0 ] || [ "$marks" -gt 100 ]; then
+if [ "$marks" -lt 0 ]; then
     echo "Invalid marks"
 else
     echo "Hi"
