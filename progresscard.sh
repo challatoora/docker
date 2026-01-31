@@ -31,6 +31,8 @@ marks=$1
 
 if [ "$marks" -lt 0 ] || [ "$marks" -gt 100 ]; then 
     echo " invalid marks "
+elif [ $marks -eq 35 ]; then 
+    echo " just pass"
 else
     echo "Good"
 fi
