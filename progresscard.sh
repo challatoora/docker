@@ -27,10 +27,10 @@ COMMENT
 
 
 
-A=$1
+marks=$1
 
-if [ $A -lt 0 ]; then
-    echo "Invalid marks"
+if [ "$marks" -lt 0 ] && [ "$marks" -gt 100 ]; then 
+    echo " invalid marks "
 else
-    echo "Hi"
+    echo "Good"
 fi
