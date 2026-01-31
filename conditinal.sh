@@ -28,7 +28,8 @@ COMMENT
 shirt=$1
 if [ $shirt -ge 100 ] && [ $shirt -le 1000 ]; then
     echo " its ordinery shirt "
-elif[ $shirt -gt 1000 ]; then
+elif [ $shirt -gt 1000 ]; then
     echo " its good shirt
- else
+else
     echo " its  cheap"  
+fi    
