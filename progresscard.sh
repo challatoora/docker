@@ -29,7 +29,7 @@ COMMENT
 
 marks=$1
 
-if [ "$marks" -lt 0 ] && [ "$marks" -gt 100 ]; then 
+if [ "$marks" -lt 0 ] || [ "$marks" -gt 100 ]; then 
     echo " invalid marks "
 else
     echo "Good"
