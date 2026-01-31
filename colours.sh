@@ -10,5 +10,5 @@ if [ a -ge 1000 ] && [ a -le 5000 ]; then
 
 if [ b -ge 500 ] && [ b -le 800]; then
     echo " print $b "
-    fi
+fi
  
