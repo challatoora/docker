@@ -35,6 +35,10 @@ elif [ $marks -eq 35 ]; then
     echo " just pass"
 elif [ $marks -gt 35 ] && [ $marks -le 60 ]; then 
     echo " second class"
+elif [ $marks -gt 60 ] && [ $marks -le 90 ]; then 
+    echo " first class"
+elif [ $marks -gt 90 ] && [ $marks -le 100 ]; then 
+    echo " state first"
 else
-    echo "Good"
+    echo "fail"
 fi
