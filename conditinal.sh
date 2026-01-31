@@ -1,6 +1,6 @@
 #!/bin/bash
 
-num=10
+num=$1
 
 if [ $num -gt 10]; then
     echo " $num is a positive num "
