@@ -10,9 +10,9 @@ echo " total $0"
 
 echo " total $$"
 
-echo " total $pwd"
+echo " total $PWD"
 
-echo " total $user"
+echo " total $USER"
 
 echo " total $?"
 
