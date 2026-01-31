@@ -33,6 +33,8 @@ if [ "$marks" -lt 0 ] || [ "$marks" -gt 100 ]; then
     echo " invalid marks "
 elif [ $marks -eq 35 ]; then 
     echo " just pass"
+elif [ $marks -gt 35 ] && [ $marks -le 60 ]; then 
+    echo " second class"
 else
     echo "Good"
 fi
