@@ -1,7 +1,7 @@
 
 #!/bin/bash
 
-logfiles=/var/log/shell-script/$0.log
+logfiles="/var/log/shell-script/$0.log"
 
 customerid=$(id -u)
 
