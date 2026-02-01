@@ -22,6 +22,7 @@ else
 fi
 }
 
+echo "ashok"
 
 dnf install mysql -y &>> $log_file
 
