@@ -22,11 +22,11 @@ fi
 }
 
 
-dnf install mysql -y &>> logfiles
+dnf install mysql -y &>> $logfiles
 
 validate $? "mysql"
 
-dnf install nginx -y &>> logfiles
+dnf install nginx -y &>> $logfiles
 
 validate $? " nginix" 
 
