@@ -8,4 +8,4 @@ if [ $id -ne 0 ]; then
 fi
 
     echo "nginix"
-dnf install nginx -y 
+dnf install nginxx -y 
