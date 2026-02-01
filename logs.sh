@@ -7,7 +7,7 @@ log_file="/var/log/shell-script/$0.log"
 
 
 if [ $customerid -eq 0 ]; then
-    echo " installaling my sql "
+    echo " installaling my sql " | tee -a $log_file
 else
     echo " u r not root user"
 
@@ -25,11 +25,11 @@ fi
 
 dnf install mysql -y &>> $log_file
 
-validate $? "mysql"
+validate $? "mysql" | tee -a $log_file
 
 dnf install nginx -y &>> $log_file
 
-validate $? " nginix"
+validate $? " nginix" | tee -a $log_file
 
 
 
