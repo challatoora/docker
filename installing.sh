@@ -16,3 +16,4 @@ if [ $? -ne 0 ]; then
 else
     echo "intsalling nginix is done"
 fi
+
