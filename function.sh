@@ -10,10 +10,20 @@ else
     exit 1
 fi
 
-  dnf install mysql -y
-
-if [ $? -eq 0 ]; then
-    echo " sucees"
+validate(){ 
+if [ $1 -eq 0 ]; then
+    echo "$2 sucees"
 else
-    echo " failed"
+    echo "$2 failed"
 fi
+}
+
+
+dnf install mysql -y
+
+validate $? "mysql"
+
+
+
+  
+
