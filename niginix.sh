@@ -1,17 +1,18 @@
 #!/bin/bash
 
-id=$(id -u)
+userid=$(id -u)
 
-if [ $id -ne 0 ]; then
-    echo " this is not a root user"
-    exit 1
-fi
-
-    echo "installing nginix"
-dnf install nginx -y 
-
-if [ $? -eq 0 ]; then
-    echo " instaled"
+if [ $userid -eq 0]; then
+    echo " installing mysql"
 else
-    echo " failed"
+    echo " u r not root user"
+
+fi
+  dnf install mysql -y
+  
+if [$? -eq 0]; then
+
+    echo " installing sucess"
+else
+    echo " failure "
 fi
