@@ -2,7 +2,7 @@
 
 userid=$(id -u)
 
-if [ $userid -eq 0]; then
+if [ $userid -eq 0 ]; then
     echo " installing mysql"
 else
     echo " u r not root user"
