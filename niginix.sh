@@ -7,5 +7,12 @@ if [ $id -ne 0 ]; then
     exit 1
 fi
 
-    echo "nginix"
-dnf install nginxx -y 
+    echo "installing nginix"
+dnf install nginx -y 
+
+if [ $? -eq 0 ]; then
+    echo " instaled"
+else
+    echo " failed"
+
+    
