@@ -5,7 +5,7 @@ USERID=$(id -u)
 Logs_folder="/var/log/shell-script"
 logs_file="$logs_folder/$0.log"
 
-if [$USERID -ne 0 ]; then
+if [ $USERID -ne 0 ]; then
         echo " please run this script with root user " | tee -a $log_file
         exit 1
 fi
@@ -23,5 +23,5 @@ systemctl enable mongod
 systemctl start mongod 
 # validate $? " start mongodb"
 
-sed -i 's/127.0.0.1/0.0.0.0/g' /etc/monogod.conf
+sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mongo.conf
 # validate $? " allowing remote connection "
