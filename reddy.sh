@@ -12,16 +12,16 @@ fi
 
 echo "Hi"
 cp mongo.repo /etc/yum.repos.d/mongo.repo
-validate $? " copiying mongo Repo"
+# validate $? " copiying mongo Repo"
 
 dnf install mongodb-org -y 
-validate $? " installing mongodb server"
+# validate $? " installing mongodb server"
 
 systemctl enable mongod 
-validate $? " enabled mongodb"
+# validate $? " enabled mongodb"
 
 systemctl start mongod 
-validate $? " start mongodb"
+# validate $? " start mongodb"
 
 sed -i 's/127.0.0.1/0.0.0.0/g' /etc/monogod.conf
-validate $? " allowing remote connection "
+# validate $? " allowing remote connection "
