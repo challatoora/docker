@@ -23,5 +23,5 @@ validate $? " enabled mongodb"
 systemctl start mongod 
 validate $? " start mongodb"
 
-sed -i "s/127.0.0.1 to 0.0.0.0/g' /etc/monogod.conf"
+sed -i 's/127.0.0.1/0.0.0.0/g' /etc/monogod.conf
 validate $? " allowing remote connection "
