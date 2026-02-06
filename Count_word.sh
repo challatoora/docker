@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Words=$1
+words=$1
 
-word_count=$(wc -w < "$Words")
+word_count=$("wc -c" $words)
 echo "count is : $word_count"
