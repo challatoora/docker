@@ -38,3 +38,22 @@ validate $? " creating system user"
 mkdir /app 
 validate $? " creating directory "
 
+curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue-v3.zip 
+validate $? " dowloading"
+
+cd /app 
+validate $? " moving app"
+
+
+unzip /tmp/catalogue.zip
+
+validate $? " unzip "
+
+npm install
+
+cp catalogue service /etc/systemd/system/catalogue.service
+
+systemctl daemon-reload
+systemctl enable catalogue 
+systemctl start catalogue
+
