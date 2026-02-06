@@ -1,6 +1,8 @@
 #!/bin/bash
 
-words=$1
+echo "my name is murali"
 
-word_count=$("wc -c" $words)
-echo "count is : $word_count"
+words=$"my name is murali"
+ 
+ echo $words | wc -c
+ 
