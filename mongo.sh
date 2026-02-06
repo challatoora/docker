@@ -23,7 +23,7 @@ validate(){
 
 }
 
-cp mongo.repo/etc/yum.repos.d/mango.repo
+cp mongo.repo /etc/yum.repos.d/mongo.repo
 validate $? " copying Mango Repo"
 
 dnf install mongodb-org -y
