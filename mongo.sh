@@ -1,8 +1,8 @@
 #!/bin/bash
 
 userid=$(id -u)
-Lfolder="/var/log/shell-roboshop"
-log_file="$Lfolder/$0.log"
+folder="/var/log/shell-roboshop"
+log_file="$folder/$0.log"
 
 
 if [ $userid -ne 0 ]; then
@@ -10,7 +10,7 @@ if [ $userid -ne 0 ]; then
     exit 1
 fi
 
-mkdir -p $Lfolder
+mkdir -p $folder
 
 validate(){
     if [ $1 -ne 0 ]; then
