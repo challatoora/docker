@@ -9,5 +9,5 @@
 
 word=$1
 
-count=(echo "$word" | wc -w)
+count=$(echo "$word" | wc -w)
 echo "$count"
