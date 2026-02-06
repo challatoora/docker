@@ -10,4 +10,4 @@
 word=$1
 
 count=("$word" | wc -w)
-echo $count
+echo "$count"
