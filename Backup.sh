@@ -38,7 +38,7 @@ if [ ! -d $destination_dir ]; then
     exit 1
 fi
 
-files=$(find $source_dir -name "*.log" -type f -mtime +$days)
+FILES=$(find $source_dir -name "*.log" -type f -mtime +$days)
 
 log " backup started" 
 log " souce directory : $source_dir "
@@ -52,9 +52,9 @@ else
     # app-logs-$timestamp.zip
     log "Files found to archieve: $FILES"
     TIMESTAMP=$(date +%F-%H-%M-%S)
-    ZIP_FILE_NAME="$DEST_DIR/app-logs-$TIMESTAMP.tar.gz"
+    ZIP_FILE_NAME="$destination_dir/app-logs-$TIMESTAMP.tar.gz"
     log "Archieve name: $ZIP_FILE_NAME"
-    tar -zcvf $ZIP_FILE_NAME $(find $SOURCE_DIR -name "*.log" -type f -mtime +$DAYS)
+    tar -zcvf $ZIP_FILE_NAME $(find $source_dir -name "*.log" -type f -mtime +$DAYS)
 
     # Check archieve is success or not
     if [ -f $ZIP_FILE_NAME ]; then
