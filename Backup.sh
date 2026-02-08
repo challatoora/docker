@@ -22,3 +22,13 @@ if [ $# -lt 3 ]; then
     usage
 fi
 
+
+if [ ! -d $source_dir ]; then
+    echo " source directy is not there"
+    exit 1
+fi
+
+if [ ! -d $destination_dir ]; then
+    echo " source directy is not there"
+    exit 1
+fi
