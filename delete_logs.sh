@@ -15,6 +15,8 @@ filesto_delete=$(find $log_folder -name "*.log" -type f  -mtime +14)
 
 while IFS= read -r line; do
     echo " deleting files are : $line"
+    rm -f $line
+     echo " deleted files are : $line"
 done <<<  $filesto_delete  # input which file to read
 
 
