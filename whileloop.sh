@@ -11,4 +11,4 @@
 
 while IFS= read -r line; do
     echo "$line"
-done < ./condition.sh # input which file to read
+done < calculator.sh  # input which file to read
