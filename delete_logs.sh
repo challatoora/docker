@@ -11,7 +11,11 @@ if [ ! -d $log_folder ]; then
 fi
 
 filesto_delete=$(find $log_folder -name "*.log" -type f  -mtime +14)
-echo "$filesto_delete"
+#echo "$filesto_delete"
+
+while IFS= read -r line; do
+    echo "$line"
+done <<<  $filesto_delete  # input which file to read
 
 
 
