@@ -44,3 +44,9 @@ log " backup started"
 log " souce directory : $source_dir "
 log " destination directory : $destination_dir"
 log " days: $days"
+
+
+if [ -z $files ]; then
+    log "No files to archive...skipping"
+fi
+
