@@ -47,18 +47,18 @@ log " days: $days"
 
 
 if [ -z "${FILES}" ]; then
-    log "No files to archieve ... $Y Skipping $N"
+    log "No files to archieve ...  Skipping "
 else
     # app-logs-$timestamp.zip
     log "Files found to archieve: $FILES"
     TIMESTAMP=$(date +%F-%H-%M-%S)
     ZIP_FILE_NAME="$destination_dir/app-logs-$TIMESTAMP.tar.gz"
     log "Archieve name: $ZIP_FILE_NAME"
-    tar -zcvf $ZIP_FILE_NAME $(find $source_dir -name "*.log" -type f -mtime +$DAYS)
+    tar -zcvf $ZIP_FILE_NAME $(find $source_dir -name "*.log" -type f -mtime +$days)
 
     # Check archieve is success or not
     if [ -f $ZIP_FILE_NAME ]; then
-        log "Archeival is ... $G SUCCESS $N"
+        log "Archeival is ...  SUCCESS "
 
         while IFS= read -r filepath; do
         # Process each line here
@@ -67,7 +67,7 @@ else
         log "Deleted file: $filepath"
         done <<< $FILES
     else
-        log "Archeival is ... $R FAILURE $N"
+        log "Archeival is ...  FAILURE"
         exit 1
     fi
 fi
