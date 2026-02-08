@@ -42,4 +42,4 @@ files=$(find $source_dir -name "*.log" -type f -mtime +$days)
 
 log " backup started" 
 log " souce directory : $source_dir "
-log " destination directory : $destination_dir
+log " destination directory : $destination_dir"
