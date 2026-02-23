@@ -53,8 +53,12 @@
 # fi
 
 murali=$(id -u)
-
 echo "$murali"
 
+if [ $murali -eq 0 ]; then
+dnf install mysql -y
+else
+    echo " u r not user"
+ 
 
 
