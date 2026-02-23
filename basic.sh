@@ -80,7 +80,7 @@ validate(){
     fi    
 }
 
-dnf install tree - y
+dnf install tree -y
 validate $? "tree" "sucess"
 
 
