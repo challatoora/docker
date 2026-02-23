@@ -39,7 +39,7 @@
 # fi
 
 echo ashok
-if [ $? -ne 0 ]; then
+if [ $? -ge 0 ]; then
 echo " sucess"
 else 
     echo " fail"
