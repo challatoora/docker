@@ -44,7 +44,7 @@
 
 # fi
 
-echo " murali"
+echo0 " murali"
 if [ $? -eq 0 ]; then
 echo " sucess"
 else 
