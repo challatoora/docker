@@ -66,22 +66,38 @@
 # else 
 #      echo " failes"
 
-ashok=$(id -u)
-if [ $ashok -ne 0 ]; then
- echo " u r not user"
- exit 1
-fi
+# ashok=$(id -u)
+# if [ $ashok -ne 0 ]; then
+#  echo " u r not user"
+#  exit 1
+# fi
 
-validate(){
-    if [ $1 -eq 0 ]; then
-    echo "$2 installing $3"
-    else
-        echo " faled $2 failed"
-    fi    
-}
+# validate(){
+#     if [ $1 -eq 0 ]; then
+#     echo "$2 installing $3"
+#     else
+#         echo " faled $2 failed"
+#     fi    
+# }
 
-dnf install tree -y
-validate $? "tree" "sucess"
+# dnf install tree -y
+# validate $? "tree" "sucess"
+
+name=murali
+echo " $name" 
+
+a= 10 
+b= 20
+
+c=$((a+b))
+echo " $c"
+
+murali=$(date)
+echo "$murali"
+
+city=hyb
+echo " i live in $city"
+
 
 
 
