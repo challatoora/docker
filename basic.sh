@@ -33,7 +33,7 @@
 price=24
 if [ $price -ge 25 ]; then
 echo " it is a premimum ptoduct"
-else:
+else
     echo "its a normal product "
 
 fi
