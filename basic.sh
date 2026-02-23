@@ -39,7 +39,7 @@
 # fi
 
 ecyho ashok
-if [ $? -ge 0 ]; then
+if [ $? -eq 0 ]; then
 echo " sucess"
 else 
     echo " fail"
