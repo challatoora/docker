@@ -44,12 +44,11 @@
 
 # fi
 
-c=$(2+5)
+echo " murali"
 if [ $? -eq 0 ]; then
-echo sucess
-else
-    echo fail
-fi
+echo " sucess"
+else 
+   echo " fail "
 
 
 
