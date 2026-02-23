@@ -46,7 +46,7 @@
 
 c=$((2+5))
 if [ $? -eq 0]; then
-echo ($c+2)
+echo sucess
 else
     echo fail
 fi
