@@ -13,21 +13,21 @@
 # read -s passwd
 # echo "password is $passwd "
 # folder1=/var/log/shell/
+# N1=$1
+# N2=$2
+# N3=$3
+# echo " total variables $@ "
+# echo " total num of variables $# "
+# echo " name of the script is $0 "
+# echo " exirt status $? "
+# echo " present location $PWD "
 
 
-N1=$1
-N2=$2
-N3=$3
+a=10
+b=20
 
+c=$(($a+$b))
 
-echo " total variables $@ "
-echo " total num of variables $# "
-
-echo " name of the script is $0 "
-
-echo " exirt status $? "
-
-echo " present location $PWD "
 
 
 
