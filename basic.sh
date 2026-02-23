@@ -21,7 +21,7 @@ N3=$3
 
 
 echo " total variables $@ "
-echo " total num of variables $@ "
+echo " total num of variables $# "
 
 echo " name of the script is $0 "
 
