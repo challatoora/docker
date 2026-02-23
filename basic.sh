@@ -27,7 +27,7 @@
 # echo "total sum $c"
  a=("apple" "mango")
 
- echo "${a[0]}"
+ echo "${a[@]}"
 
 
 
