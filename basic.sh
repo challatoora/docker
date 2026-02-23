@@ -15,7 +15,12 @@
 echo "please enter first name "
 read name 
 
-echo "$name"
+echo "my name is $name"
+
+echo " please enter password"
+read -s passwd
+
+echo "password is $passwd "
 
 # folder1=/var/log/shell/
 
