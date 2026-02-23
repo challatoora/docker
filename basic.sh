@@ -52,23 +52,35 @@
 
 # fi
 
-murali=$(id -u)
-echo "$murali"
+# murali=$(id -u)
+# echo "$murali"
 
-if [ $murali -ne 0 ]; then
-echo " u r not user"
-exit 1  
+# if [ $murali -ne 0 ]; then
+# echo " u r not user"
+# exit 1  
+# fi
+
+# dnf install tree -y
+# if [ $? -eq 0 ]; then
+# echo " installing tree"
+# else 
+#      echo " failes"
+
+ashok=$(id -u)
+if [ $ashok -ne 0 ]; then
+ echo " u r not user"
+ exit 1
 fi
 
-validate (){
+validate(){
     if [ $1 -eq 0 ]; then
-    echo " $2 installing"
+    echo "$2 installing $3"
     else
-        echo "Error"
+        echo " faled $2 failed"
 }
 
-dnf install nginx -y
-validate $? "nginx"
+dnf install tree - y
+validate $? "tree" "sucess"
 
 
 
