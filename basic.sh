@@ -25,9 +25,14 @@
 # b=ashok
 # c=$(($a+$b))
 # echo "total sum $c"
- a=("apple" "mango")
+#  a=("apple" "mango")
 
- echo "${a[@]}"
+#  echo "${a[@]}"
 
 
+Price=100
+if [ $price -ge 25 ]; then
+
+echo " it is a premimum ptoduct"
+fi
 
