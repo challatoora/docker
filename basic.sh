@@ -25,7 +25,7 @@ echo " total num of variables $# "
 
 echo " name of the script is $0 "
 
-echo " exirt status $s "
+echo " exirt status $? "
 
 echo " present location $PWD "
 
