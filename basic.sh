@@ -44,13 +44,17 @@
 
 # fi
 
-echo0 " murali"
-if [ $? -eq 0 ]; then
-echo " sucess"
-else 
-   echo " fail "
+# echo0 " murali"
+# if [ $? -eq 0 ]; then
+# echo " sucess"
+# else 
+#    echo " fail "
 
-fi
+# fi
+
+murali=$(id -u)
+
+echo "$murali"
 
 
 
