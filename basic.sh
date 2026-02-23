@@ -5,6 +5,12 @@
 # echo "$Name1 and $Name2"S
 # Name3=$1
 # Name4=$2
+# echo ashok
+# if [ $? -eq 0 ]; then
+# echo " sucess"
+# else 
+#     echo " fail"
+# fi
 # echo "$1 and $2"
 # echo "please enter first name "
 # read name 
@@ -38,10 +44,12 @@
 
 # fi
 
-echo ashok
-if [ $? -eq 0 ]; then
-echo " sucess"
-else 
-    echo " fail"
+c=$((2+5))
+if [ $? -eq 0]; then
+echo ($c+2)
+else
+    echo fail
 fi
+
+
 
