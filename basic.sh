@@ -21,17 +21,13 @@
 # echo " name of the script is $0 "
 # echo " exirt status $? "
 # echo " present location $PWD "
+# a=10
+# b=ashok
+# c=$(($a+$b))
+# echo "total sum $c"
+ a=("apple" "mango")
 
-
-a=10
-b=ashok
-
-c=$(($a+$b))
-echo "total sum $c"
-
-
-
-
+ echo " my favourite fruits $a"
 
 
 
