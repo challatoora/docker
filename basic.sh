@@ -30,8 +30,9 @@
 #  echo "${a[@]}"
 
 
-price=100
+price=24
 if [ $price -ge 25 ]; then
 echo " it is a premimum ptoduct"
+
 fi
 
