@@ -24,7 +24,7 @@
 
 
 a=10
-b=20
+b=ashok
 
 c=$(($a+$b))
 echo "total sum $c"
