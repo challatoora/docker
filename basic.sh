@@ -55,11 +55,21 @@
 murali=$(id -u)
 echo "$murali"
 
-if [ $murali -eq 0 ]; then
-dnf install mysql -y
-else
-    echo " u r not user"
+if [ $murali -ne 0 ]; then
+echo " u r not user"
+exit 1  
 fi
- 
+
+validate (){
+    if [ $1 -eq 0 ]; then
+    echo " $2 installing"
+    else
+        echo "Error"
+}
+
+dnf install nginx -y
+validate $? "nginx"
+
+
 
 
