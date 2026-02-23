@@ -44,7 +44,7 @@
 
 # fi
 
-c=$((2+5))
+c=$(2+5)
 if [ $? -eq 0 ]; then
 echo sucess
 else
