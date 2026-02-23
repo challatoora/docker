@@ -89,7 +89,7 @@ echo " $name"
 a=10 
 b=20
 c=$((a+b))
-echo " $c"
+echo " ($c+1)"
 
 murali=$(date)
 echo "$murali"
@@ -97,6 +97,12 @@ echo "$murali"
 city=hyb
 echo " i live in $city"
 
+
+echo intermediate
+
+
+a=$1
+echo " print $a"
 
 
 
