@@ -30,11 +30,13 @@
 #  echo "${a[@]}"
 
 
-price=24
-if [ $price -ge 25 ]; then
-echo " it is a premimum ptoduct"
-else
-    echo "its a normal product "
+# price=24
+# if [ $price -ge 25 ]; then
+# echo " it is a premimum ptoduct"
+# else
+#     echo "its a normal product "
 
-fi
+# fi
+
+echo ashok
 
