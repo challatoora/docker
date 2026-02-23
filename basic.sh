@@ -45,7 +45,7 @@
 # fi
 
 c=$((2+5))
-if [ $? -eq 0]; then
+if [ $? -eq 0 ]; then
 echo sucess
 else
     echo fail
