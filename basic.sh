@@ -27,7 +27,7 @@
 # echo "total sum $c"
  a=("apple" "mango")
 
- echo " my favourite fruits $a"
+ echo "${a[0]}"
 
 
 
