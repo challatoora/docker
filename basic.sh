@@ -38,7 +38,7 @@
 
 # fi
 
-echo ashok
+ecyho ashok
 if [ $? -ge 0 ]; then
 echo " sucess"
 else 
