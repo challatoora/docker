@@ -77,6 +77,7 @@ validate(){
     echo "$2 installing $3"
     else
         echo " faled $2 failed"
+    fi    
 }
 
 dnf install tree - y
