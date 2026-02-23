@@ -89,7 +89,7 @@ echo " $name"
 a=10 
 b=20
 c=$((a+b))
-echo " ($c+1)"
+echo " $((c+1))"
 
 murali=$(date)
 echo "$murali"
