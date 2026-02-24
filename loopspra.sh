@@ -10,7 +10,19 @@
 
 
 
-Num=$1
-if [ $1((0+25)) ];then
 
- echo " $1 values"
+
+
+echo "Enter a number:"
+read N
+
+i=1
+sum=0
+
+while [ $i -le $N ]
+do
+    sum=$((sum + i))
+    i=$((i + 1))
+done
+
+echo "Sum from 1 to $N is: $sum"
