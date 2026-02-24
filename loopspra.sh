@@ -1,4 +1,7 @@
-for i in {1..10}
+for i in {1..20}
 do
-echo $i
+ if [ $i%2  ]; then 
+  echo " print $i this are the even number"
+ else
+  echo " odd number " 
 done
