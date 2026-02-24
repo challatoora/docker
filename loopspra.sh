@@ -3,5 +3,6 @@ do
  if [ $i%2  ]; then 
   echo " print $i this are the even number"
  else
-  echo " odd number " 
+  echo " odd number "
+ fi  
 done
