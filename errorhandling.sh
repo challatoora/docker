@@ -18,5 +18,5 @@ validate(){
   fi
 }
 
-dnf install  nginx -y 
-validate $? "nginx"
+dnf install  tree -y &>> $logs
+validate $? "tree"
