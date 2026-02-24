@@ -11,6 +11,6 @@
 
 
 Num=$1
-if [ (($1+25)) ];then
+if [ $1((0+25)) ];then
 
  echo " $1 values"
